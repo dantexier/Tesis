@@ -1,0 +1,38 @@
+[20 Apr 2014 21:21:30] DEBUG Executing SQL script
+[20 Apr 2014 21:21:30] INFO ================================================================================
+[20 Apr 2014 21:21:30] INFO onError= 'stop'
+[20 Apr 2014 21:21:30] INFO autoCommit= 'false'
+[20 Apr 2014 21:21:30] INFO username= 'postgres'
+[20 Apr 2014 21:21:30] INFO outputPath= '/opt/eclipse/mde/researcher/workspace/RR/.Temp~/UpdateSQL.xml'
+[20 Apr 2014 21:21:30] INFO outputLogPath= '/opt/eclipse/mde/researcher/workspace/RR/.Temp~/UpdateSQL.xml.log'
+[20 Apr 2014 21:21:30] INFO encoding= ''
+[20 Apr 2014 21:21:30] INFO driverClass= 'org.postgresql.Driver'
+[20 Apr 2014 21:21:30] INFO sqlScript= '/opt/eclipse/mde/researcher/workspace/RR/.Temp~/UpdateSQL.sql'
+[20 Apr 2014 21:21:30] INFO eventSocketPort= '58433'
+[20 Apr 2014 21:21:30] INFO statementSeparator= ';'
+[20 Apr 2014 21:21:30] INFO derby.system.home= '/opt/eclipse/mde/researcher/workspace/.metadata/.plugins/com.webratio.commons.db/derby'
+[20 Apr 2014 21:21:30] INFO password= '32168900'
+[20 Apr 2014 21:21:30] INFO url= 'jdbc:postgresql://localhost:5432/Propuesta'
+[20 Apr 2014 21:21:30] INFO ================================================================================
+[20 Apr 2014 21:21:30] INFO Connecting to the Database...
+[20 Apr 2014 21:21:30] INFO Database connection estabilished
+[20 Apr 2014 21:21:30] INFO transaction isolation: 2
+[20 Apr 2014 21:21:30] DEBUG ================================================================================
+[20 Apr 2014 21:21:30] DEBUG Executing SQL script file: /opt/eclipse/mde/researcher/workspace/RR/.Temp~/UpdateSQL.sql
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  create table "public"."group" ( "oid"  int4  not null, "groupname"  varchar(255), primary key ("oid") )
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    create table "public"."module" ( "oid"  int4  not null, "moduleid"  varchar(255), "modulename"  varchar(255), primary key ("oid") )
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    create table "public"."user" ( "oid"  int4  not null, "username"  varchar(255), "password"  varchar(255), "email"  varchar(255), primary key ("oid") )
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    alter table "public"."group"  add column  "module_oid"  int4
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."group"   add constraint fk_group_module foreign key ("module_oid") references "public"."module" ("oid")
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    create table "public"."group_module" ( "group_oid"  int4 not null, "module_oid"  int4 not null, primary key ("group_oid", "module_oid") )
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_group foreign key ("group_oid") references "public"."group" ("oid")
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."group_module"   add constraint fk_group_module_module foreign key ("module_oid") references "public"."module" ("oid")
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    alter table "public"."user"  add column  "group_oid"  int4
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."user"   add constraint fk_user_group foreign key ("group_oid") references "public"."group" ("oid")
+[20 Apr 2014 21:21:30] DEBUG Executing statement:    create table "public"."user_group" ( "user_oid"  int4 not null, "group_oid"  int4 not null, primary key ("user_oid", "group_oid") )
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_user foreign key ("user_oid") references "public"."user" ("oid")
+[20 Apr 2014 21:21:30] DEBUG Executing statement:  alter table "public"."user_group"   add constraint fk_user_group_group foreign key ("group_oid") references "public"."group" ("oid")
+[20 Apr 2014 21:21:30] DEBUG ================================================================================
+[20 Apr 2014 21:21:30] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[20 Apr 2014 21:21:30] INFO Database connection closed
+[20 Apr 2014 21:21:30] DEBUG Total time: 212 milliseconds

@@ -1,0 +1,70 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area4#page4" name="All tesis" linkOrder="sv1#area4#page4#ln9" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv1#area4#page4#inu3" name="details..." gr:x="0" gr:y="160" entity="ent5" displayAttributes="ent5#att20 rel3#role5.ent7#att26 rel3#role5.ent7#att27">
+      <Selector id="sv1#area4#page4#inu3#su5" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area4#page4#inu3#su5#acond5" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" value="64|25|66|94|130|146|132|121|89|85|117|118|119|120" attributes="rel3#role5.ent7#att25"/>
+        <RelationshipRoleCondition id="sv1#area4#page4#inu3#su5#rcond3" name="RoleCondition1" predicate="in" implied="false" role="rel2#role4"/>
+      </Selector>
+      <SortAttribute attribute="ent5#att19" order="ascending"/>
+    </IndexUnit>
+    <PowerIndexUnit id="sv1#area4#page4#pwu3" name="tesis..." linkOrder="sv1#area4#page4#pwu3#ln8" gr:x="15" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent4" blockFactor="10" blockWindow="4" maxResults="100" displayAttributes="ent4#att16 ent4#att17 ent4#att18">
+      <Selector id="sv1#area4#page4#pwu3#su6" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area4#page4#pwu3#su6#acond6" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="thesis" attributes="ent4#att18"/>
+      </Selector>
+      <Link id="sv1#area4#page4#pwu3#ln8" name="Flow4" to="sv1#area4#page4#inu3" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#page4#pwu3#ln8#par3" name="MetadatosToItems.id_RoleCondition1 [id]" source="data[].ent4#att16" target="sv1#area4#page4#inu3#su5#rcond3.ent4#att16"/>
+      </Link>
+      <SortAttribute attribute="ent4#att18" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page4#pwu3">
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Link link="sv1#area4#page4#pwu3#ln8"/>
+          <layout:Link link="sv1#area4#page4#pwu3ent4#att18"/>
+          <layout:Link link="sv1#area4#page4#pwu3First"/>
+          <layout:Link link="sv1#area4#page4#pwu3Previous"/>
+          <layout:Link link="sv1#area4#page4#pwu3Block"/>
+          <layout:Link link="sv1#area4#page4#pwu3Next"/>
+          <layout:Link link="sv1#area4#page4#pwu3Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page4#inu3">
+          <layout:Attribute attribute="ent5#att20"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att26"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att27"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area4#page4#ln9" name="Inicio" to="sv1#area1#page1" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-202,-48,183,72"/>
+</Page>

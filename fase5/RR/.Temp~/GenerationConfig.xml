@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+  <Properties>
+    <Property name="ajaxActivated">true</Property>
+    <Property name="applicationServer">Tomcat</Property>
+    <Property name="commonsLibDir">/opt/eclipse/mde/researcher/plugins/com.webratio.commons.libs_7.2.2.201402140100/lib</Property>
+    <Property name="dbConfigPath">/tmp/WRDBConfig1729314220720082710.xml</Property>
+    <Property name="defaultEncoding"></Property>
+    <Property name="deployCorePluginDir">/opt/eclipse/mde/researcher/configuration/org.eclipse.osgi/bundles/49/1/.cp</Property>
+    <Property name="enterpriseProjectDir"></Property>
+    <Property name="eventSocketPort">45784</Property>
+    <Property name="excludedProjects" type="list"></Property>
+    <Property name="generationTime">201404220841</Property>
+    <Property name="helpersPluginDir">/opt/eclipse/mde/researcher/plugins/com.webratio.generator.helpers_7.2.2.201402140100</Property>
+    <Property name="i18nBundleKeysFile" type="file"></Property>
+    <Property name="i18nExtraBundleFile" type="file"></Property>
+    <Property name="lockDir">/opt/eclipse/mde/researcher/workspace/RR/.Temp~</Property>
+    <Property name="outputPath">/opt/eclipse/mde/Tomcat/webapps/RR</Property>
+    <Property name="phases">All</Property>
+    <Property name="projectDir">/opt/eclipse/mde/researcher/workspace/RR</Property>
+    <Property name="projectName">RR</Property>
+    <Property name="projectPath">/tmp/Project5875045811822587520.wr</Property>
+    <Property name="projectType">WEBPROJECT</Property>
+    <Property name="rootModuleName"></Property>
+    <Property name="uiPluginDir">/opt/eclipse/mde/researcher/plugins/com.webratio.ide.ui_7.2.2.201402140100</Property>
+    <Property name="webappPluginDir">/opt/eclipse/mde/researcher/plugins/com.webratio.generator.webapp_7.2.2.201402140100</Property>
+    <Property name="wrBuildId">201402140100</Property>
+    <Property name="wrGenerateOldValidationRules">false</Property>
+    <Property name="wrModelStatistics">pages=6|units=12</Property>
+    <Property name="wrVersion">7.2.2</Property>
+  </Properties>
+  <Plugins>
+    <Plugin id="com.webratio.commons.libs" path="/opt/eclipse/mde/researcher/plugins/com.webratio.commons.libs_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.commons.transform" path="/opt/eclipse/mde/researcher/plugins/com.webratio.commons.transform_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.debug" path="/opt/eclipse/mde/researcher/plugins/com.webratio.debug_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.apache.commons.codec" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.apache.commons.codec_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.apache.commons.collections" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.apache.commons.collections_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.apache.commons.httpclient" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.apache.commons.httpclient_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.apache.commons.lang" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.apache.commons.lang_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.apache.commons.logging" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.apache.commons.logging_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.dom4j" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.dom4j_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.lib.javassist" path="/opt/eclipse/mde/researcher/plugins/com.webratio.lib.javassist_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.rtx.extras" path="/opt/eclipse/mde/researcher/plugins/com.webratio.rtx.extras_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.rtx" path="/opt/eclipse/mde/researcher/plugins/com.webratio.rtx_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.struts13" path="/opt/eclipse/mde/researcher/plugins/com.webratio.struts13_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.units.content" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.content_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.controlflow" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.controlflow_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.module" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.module_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.operation" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.operation_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.session" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.session_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.utility" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.utility_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.validation" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.validation_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.units.ws" path="/opt/eclipse/mde/researcher/plugins/com.webratio.units.ws_7.2.2.201402140100" type="components"/>
+    <Plugin id="com.webratio.ws" path="/opt/eclipse/mde/researcher/plugins/com.webratio.ws_7.2.2.201402140100"/>
+    <Plugin id="com.webratio.xsd" path="/opt/eclipse/mde/researcher/plugins/com.webratio.xsd_7.2.2.201402140100"/>
+  </Plugins>
+  <Styles>
+    <Style name="BPM" path="/opt/eclipse/mde/researcher/plugins/BPM_7.2.2.201402140100"/>
+    <Style name="Excel" path="/opt/eclipse/mde/researcher/plugins/Excel_7.2.2.201402140100"/>
+    <Style name="Multiflex" path="/opt/eclipse/mde/researcher/plugins/Multiflex_7.2.2.201402140100"/>
+    <Style name="Reports" path="/opt/eclipse/mde/researcher/plugins/Reports_7.2.2.201402140100"/>
+    <Style name="WebRatio" path="/opt/eclipse/mde/researcher/plugins/WebRatio_7.2.2.201402140100"/>
+    <Style name="WRDefault" path="/opt/eclipse/mde/researcher/plugins/WRDefault_7.2.2.201402140100"/>
+  </Styles>
+  <FileEncodings/>
+</Configuration>

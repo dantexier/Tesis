@@ -1,0 +1,150 @@
+<DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:wrxsd="http://www.webratio.com/2012/WebML/WRXSD">
+  <Entity id="User" name="User" duration="persistent" gr:x="30" gr:y="455" gr:hideAttributes="false" attributeOrder="userOID userName password email" db:database="db1" db:table="user">
+    <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="userName" id="userName" type="string" db:column="username"/>
+    <Attribute name="password" id="password" type="password" db:column="password"/>
+    <Attribute name="email" id="email" type="string" db:column="email"/>
+  </Entity>
+  <Entity id="Group" name="Group" duration="persistent" gr:x="290" gr:y="475" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
+    <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="groupName" id="groupName" type="string" db:column="groupname"/>
+  </Entity>
+  <Entity id="Module" name="Module" duration="persistent" gr:x="525" gr:y="465" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName" db:database="db1" db:table="module">
+    <Attribute name="oid" id="moduleOID" type="integer" key="true" db:column="oid"/>
+    <Attribute name="moduleID" id="moduleID" type="string" db:column="moduleid"/>
+    <Attribute name="moduleName" id="moduleName" type="string" db:column="modulename"/>
+  </Entity>
+  <Relationship id="User2Group_Group2User" name="User_Group" sourceEntity="User" targetEntity="Group" db:database="db1" db:table="user_group">
+    <RelationshipRole1 id="User2Group" name="groups" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="Group2User" name="users" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="User2DefaultGroup_DefaultGroup2User" name="User_DefaultGroup" sourceEntity="User" targetEntity="Group" gr:bendpoints="113,42,-112,44" db:database="db1" db:table="user">
+    <RelationshipRole1 id="User2DefaultGroup" name="defaultGroup" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="DefaultGroup2User" name="defaultUsers" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="Group2DefaultModule_DefaultModule2Group" name="Group_DefaultModule" sourceEntity="Group" targetEntity="Module" db:database="db1" db:table="group">
+    <RelationshipRole1 id="Group2DefaultModule" name="defaultModule" maxCard="1">
+      <db:JoinColumn attribute="groupOID" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="DefaultModule2Group" name="defaultGroups" maxCard="N">
+      <db:JoinColumn attribute="moduleOID" name="module_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="Group2Module_Module2Group" name="Group_Module" sourceEntity="Group" targetEntity="Module" gr:bendpoints="110,41,-115,41" db:database="db1" db:table="group_module">
+    <RelationshipRole1 id="Group2Module" name="modules" maxCard="N">
+      <db:JoinColumn attribute="groupOID" name="group_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="Module2Group" name="groups" maxCard="N">
+      <db:JoinColumn attribute="moduleOID" name="module_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <db:Database id="db1" name="RR_SEDICI" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/Propuesta" username="postgres" password="MzIxNjg5MDA=" cryptedPassword="true" connectionCount="5" schema="public"/>
+  <Entity id="ent1" name="Autor" db:database="db1" duration="persistent" db:table="Autor" gr:x="260" gr:y="0">
+    <Attribute id="ent1#att1" name="idA" db:column="ID_A" type="integer" key="true"/>
+    <Attribute id="ent1#att2" name="nombre" db:column="nombre" type="string" key="false"/>
+    <Attribute id="ent1#att3" name="apellido" db:column="apellido" type="string" key="false"/>
+    <Attribute id="ent1#att4" name="dni" db:column="dni" type="integer" key="false"/>
+    <Attribute id="ent1#att5" name="email" db:column="email" type="string" key="false"/>
+    <Attribute id="ent1#att6" name="dependencia" db:column="dependencia" type="string" key="false"/>
+    <Attribute id="ent1#att7" name="unidad" db:column="unidad" type="string" key="false"/>
+    <Attribute id="ent1#att8" name="paisId" db:column="pais_ID" type="integer" key="false"/>
+  </Entity>
+  <Entity id="ent2" name="Esquema" db:database="db1" duration="persistent" db:table="Esquema" gr:x="505" gr:y="345">
+    <Attribute id="ent2#att9" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent2#att10" name="nombre" db:column="nombre" type="string" key="false"/>
+    <Attribute id="ent2#att11" name="namespace" db:column="namespace" type="string" key="false"/>
+  </Entity>
+  <Entity id="ent3" name="Institucion" db:database="db1" duration="persistent" db:table="Institucion" gr:x="540" gr:y="40">
+    <Attribute id="ent3#att12" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent3#att13" name="nombre" db:column="nombre" type="string" key="false"/>
+    <Attribute id="ent3#att14" name="abreviatura" db:column="abreviatura" type="string" key="false"/>
+    <Attribute id="ent3#att15" name="paisId" db:column="pais_ID" type="integer" key="false"/>
+  </Entity>
+  <Entity id="ent4" name="Items" db:database="db1" duration="persistent" db:table="Items" gr:x="45" gr:y="205">
+    <Attribute id="ent4#att16" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent4#att17" name="titulo" db:column="titulo" type="string" key="false"/>
+    <Attribute id="ent4#att18" name="idTipo" db:column="ID_tipo" type="string" key="false"/>
+  </Entity>
+  <Entity id="ent5" name="Metadatos" db:database="db1" duration="persistent" db:table="Metadatos" gr:x="280" gr:y="215">
+    <Attribute id="ent5#att19" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent5#att20" name="valor" db:column="valor" type="string" key="false"/>
+  </Entity>
+  <Entity id="ent6" name="Numrevista" db:database="db1" duration="persistent" db:table="Numrevista" gr:x="480" gr:y="195">
+    <Attribute id="ent6#att21" name="volumen" db:column="volumen" type="string" key="false"/>
+    <Attribute id="ent6#att22" name="numero" db:column="numero" type="string" key="false"/>
+    <Attribute id="ent6#att23" name="revistaId" db:column="revista_ID" type="integer" key="false"/>
+    <Attribute id="ent6#att24" name="editores" db:column="editores" type="string" key="false"/>
+    <Generalization superEntity="ent8">
+      <db:JoinColumn attribute="ent8#att29" name="ID"/>
+    </Generalization>
+  </Entity>
+  <Entity id="ent7" name="RegistroMetadato" db:database="db1" duration="persistent" db:table="Registro_metadato" gr:x="260" gr:y="335">
+    <Attribute id="ent7#att25" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent7#att26" name="element" db:column="element" type="string" key="false"/>
+    <Attribute id="ent7#att27" name="qualifier" db:column="qualifier" type="string" key="false"/>
+    <Attribute id="ent7#att28" name="scopeNote" db:column="scope_note" type="string" key="false"/>
+  </Entity>
+  <Entity id="ent8" name="Revista" db:database="db1" duration="persistent" db:table="Revista" gr:x="740" gr:y="215">
+    <Attribute id="ent8#att29" name="id" db:column="ID" type="integer" key="true"/>
+    <Attribute id="ent8#att30" name="titulo" db:column="titulo" type="string" key="false"/>
+  </Entity>
+  <Relationship id="rel1" name="RegistrometadatoEsquema" db:database="db1" db:table="Registro_metadato" sourceEntity="ent7" targetEntity="ent2">
+    <RelationshipRole1 id="rel1#role1" name="RegistrometadatoToEsquema" maxCard="1">
+      <db:JoinColumn attribute="ent7#att25" name="ID"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel1#role2" name="EsquemaToRegistrometadato" maxCard="N">
+      <db:JoinColumn attribute="ent2#att9" name="esquema_ID"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel2" name="MetadatosItems" db:database="db1" db:table="Metadatos" sourceEntity="ent5" targetEntity="ent4">
+    <RelationshipRole1 id="rel2#role3" name="MetadatosToItems" maxCard="1">
+      <db:JoinColumn attribute="ent5#att19" name="ID"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel2#role4" name="ItemsToMetadatos" maxCard="N">
+      <db:JoinColumn attribute="ent4#att16" name="item_ID"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel3" name="MetadatosRegistrometadato" db:database="db1" db:table="Metadatos" sourceEntity="ent5" targetEntity="ent7">
+    <RelationshipRole1 id="rel3#role5" name="MetadatosToRegistrometadato" maxCard="1">
+      <db:JoinColumn attribute="ent5#att19" name="ID"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel3#role6" name="RegistrometadatoToMetadatos" maxCard="N">
+      <db:JoinColumn attribute="ent7#att25" name="registrometadato_ID"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel4" name="AutorInstitucion" db:database="db1" db:table="Autor" sourceEntity="ent1" targetEntity="ent3">
+    <RelationshipRole1 id="rel4#role7" name="AutorToInstitucion" maxCard="1">
+      <db:JoinColumn attribute="ent1#att1" name="ID_A"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel4#role8" name="InstitucionToAutor" maxCard="N">
+      <db:JoinColumn attribute="ent3#att12" name="institucion_ID"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Package id="pkg1" name="xSDProvider1" gr:x="30" gr:y="575">
+    <Package id="pkg1#pkg2" name="sedici" gr:x="0" gr:y="0">
+      <Entity id="pkg1#pkg2#ent9" name="item" duration="volatile" volatileStorage="database" wrxsd:provider="xsdp1" wrxsd:type="item[Element]" gr:x="0" gr:y="0">
+        <Attribute id="pkg1#pkg2#ent9#att31" name="oid" type="integer" key="true"/>
+        <Attribute id="pkg1#pkg2#ent9#att32" name="title" type="string" key="false" wrxsd:element="title"/>
+        <Attribute id="pkg1#pkg2#ent9#att33" name="ID" type="integer" key="false" wrxsd:element="id"/>
+        <Attribute id="pkg1#pkg2#ent9#att34" name="tipo" type="string" key="false" wrxsd:element="tipo"/>
+      </Entity>
+      <Entity id="pkg1#pkg2#ent10" name="item_metadatos" duration="volatile" volatileStorage="database" wrxsd:provider="xsdp1" wrxsd:type="item/metadatos[Element]" gr:x="210" gr:y="13">
+        <Attribute id="pkg1#pkg2#ent10#att35" name="oid" type="integer" key="true"/>
+        <Attribute id="pkg1#pkg2#ent10#att36" name="ID" type="integer" key="false" wrxsd:element="id"/>
+        <Attribute id="pkg1#pkg2#ent10#att37" name="valor" type="string" key="false" wrxsd:element="valor"/>
+      </Entity>
+    </Package>
+  </Package>
+  <Relationship id="rel5" name="metadatos" sourceEntity="pkg1#pkg2#ent9" targetEntity="pkg1#pkg2#ent10" wrxsd:element="metadatos">
+    <RelationshipRole1 id="rel5#role9" name="metadatos" maxCard="1"/>
+    <RelationshipRole2 id="rel5#role10" name="metadatosInverse" maxCard="1"/>
+  </Relationship>
+</DataModel>

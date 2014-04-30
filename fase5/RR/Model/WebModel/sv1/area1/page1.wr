@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area1#page1" name="Inicio" linkOrder="sv1#area1#page1#ln1">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area1#page1#mssu1" name="Mensaje">
+      <Message xml:space="preserve">Hola Mundo</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#mssu1"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area1#page1#ln1" name="all..." to="sv1#area2#page2" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area1#page1#ln7" name="papers..." to="sv1#area3#page3" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv1#area1#page1#ln10" name="papers..." to="sv1#area4#page4" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv1#area1#page1#ln13" name="papers..." to="sv1#area5#page5" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

@@ -1,0 +1,8 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Presentacion" landmarks="sv1#area1 sv1#area2 sv1#area3 sv1#area4 sv1#area5" homePage="sv1#area1#page1">
+  <OperationUnits>
+    <XmlImportExportUnit gr:x="130" gr:y="715" id="sv1#xcu1" name="XML I/O1" mode="export" entity="pkg1#pkg2#ent10">
+      <OKLink id="sv1#xcu1#oln1" name="OKFlow1" to="sv1#area3#page3#gxu1" automaticCoupling="true"/>
+      <KOLink id="sv1#xcu1#kln1" name="KOFlow1" to="sv1#page7" automaticCoupling="true"/>
+    </XmlImportExportUnit>
+  </OperationUnits>
+</SiteView>

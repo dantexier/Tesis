@@ -1,0 +1,93 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page3" name="All papers" linkOrder="sv1#area3#page3#ln6" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv1#area3#page3#inu2" name="details..." gr:x="0" gr:y="160" entity="ent5" displayAttributes="ent5#att20 rel3#role5.ent7#att26 rel3#role5.ent7#att27" linkOrder="sv1#area3#page3#inu2#ln15">
+      <Selector id="sv1#area3#page3#inu2#su3" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area3#page3#inu2#su3#acond3" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" value="64|25|66|94|130|146|132|121|89|85|117|118|119|120" attributes="rel3#role5.ent7#att25"/>
+        <RelationshipRoleCondition id="sv1#area3#page3#inu2#su3#rcond2" name="RoleCondition1" predicate="in" implied="false" role="rel2#role4"/>
+      </Selector>
+      <SortAttribute attribute="ent5#att19" order="ascending"/>
+      <Link id="sv1#area3#page3#inu2#ln15" name="XML2" to="sv1#xcu1" type="normal" validate="true">
+        <LinkParameter id="sv1#area3#page3#inu2#ln15#par7" name="id_oid" source="data[].rel3#role5_ent7#att25" target="sv1#xcu1.pkg1#pkg2#ent10#att35"/>
+      </Link>
+    </IndexUnit>
+    <PowerIndexUnit id="sv1#area3#page3#pwu2" name="papers..." linkOrder="sv1#area3#page3#pwu2#ln5 sv1#area3#page3#pwu2#ln3" gr:x="15" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent4" blockFactor="10" blockWindow="4" maxResults="100" displayAttributes="ent4#att16 ent4#att17 ent4#att18">
+      <Selector id="sv1#area3#page3#pwu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area3#page3#pwu2#su4#acond4" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="paper" attributes="ent4#att18"/>
+      </Selector>
+      <Link id="sv1#area3#page3#pwu2#ln5" name="detalles..." to="sv1#area3#page3#inu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area3#page3#pwu2#ln5#par2" name="MetadatosToItems.id_RoleCondition1 [id]" source="data[].ent4#att16" target="sv1#area3#page3#inu2#su3#rcond2.ent4#att16"/>
+      </Link>
+      <SortAttribute attribute="ent4#att18" order="ascending"/>
+      <Link id="sv1#area3#page3#pwu2#ln3" name="XML" to="sv1#xcu1" type="normal" validate="true" gr:bendpoints="-123,198,-113,-148">
+        <LinkParameter id="sv1#area3#page3#pwu2#ln3#par5" name="id_oid" source="data[].ent4#att16" target="sv1#xcu1.pkg1#pkg2#ent9#att31"/>
+      </Link>
+    </PowerIndexUnit>
+    <GetXMLUnit gr:x="275" gr:y="95" id="sv1#area3#page3#gxu1" name="Get XML1" sourceType="text"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page3#pwu2">
+          <layout:Attribute attribute="ent4#att16"/>
+          <layout:Attribute attribute="ent4#att17"/>
+          <layout:Attribute attribute="ent4#att18"/>
+          <layout:Link link="sv1#area3#page3#pwu2#ln5"/>
+          <layout:Link link="sv1#area3#page3#pwu2#ln3"/>
+          <layout:Link link="sv1#area3#page3#pwu2ent4#att18"/>
+          <layout:Link link="sv1#area3#page3#pwu2First"/>
+          <layout:Link link="sv1#area3#page3#pwu2Previous"/>
+          <layout:Link link="sv1#area3#page3#pwu2Block"/>
+          <layout:Link link="sv1#area3#page3#pwu2Next"/>
+          <layout:Link link="sv1#area3#page3#pwu2Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page3#inu2">
+          <layout:Attribute attribute="ent5#att20"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att26"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att27"/>
+          <layout:Link link="sv1#area3#page3#inu2#ln15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area3#page3#ln6" name="Inicio" to="sv1#area1#page1" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-202,-48,183,72"/>
+</Page>

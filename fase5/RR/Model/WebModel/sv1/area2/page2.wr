@@ -1,0 +1,72 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page2" name="All..." linkOrder="sv1#area2#page2#ln2">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="160" id="sv1#area2#page2#inu1" name="details..." entity="ent5" displayAttributes="ent5#att20 rel3#role5.ent7#att26 rel3#role5.ent7#att27">
+      <Selector id="sv1#area2#page2#inu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area2#page2#inu1#su2#acond2" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" value="64|25|66|94|130|146|132|121|89|85|117|118|119|120" attributes="rel3#role5.ent7#att25"/>
+        <RelationshipRoleCondition id="sv1#area2#page2#inu1#su2#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel2#role4"/>
+      </Selector>
+      <SortAttribute attribute="ent5#att19" order="ascending"/>
+    </IndexUnit>
+    <PowerIndexUnit gr:x="15" gr:y="0" id="sv1#area2#page2#pwu1" name="todos..." sortable="true" checkable="false" useCountQuery="false" entity="ent5" displayAttributes="ent5#att20 rel2#role3.ent4#att17 rel2#role3.ent4#att16" blockFactor="10" blockWindow="4" maxResults="100" linkOrder="sv1#area2#page2#pwu1#ln4">
+      <SortAttribute attribute="rel2#role3.ent4#att16" order="ascending"/>
+      <SortAttribute attribute="ent5#att20" order="ascending"/>
+      <Selector id="sv1#area2#page2#pwu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area2#page2#pwu1#su1#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="64" attributes="rel3#role5.ent7#att25"/>
+      </Selector>
+      <Link id="sv1#area2#page2#pwu1#ln4" name="Flow4" to="sv1#area2#page2#inu1" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page2#pwu1#ln4#par1" name="MetadatosToItems.id_RoleCondition1 [id]" target="sv1#area2#page2#inu1#su2#rcond1.ent4#att16" source="data[].rel2#role3_ent4#att16"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page2#pwu1">
+          <layout:Link link="sv1#area2#page2#pwu1#ln4"/>
+          <layout:Link link="sv1#area2#page2#pwu1rel2#role3$ent4#att16"/>
+          <layout:Link link="sv1#area2#page2#pwu1ent5#att20"/>
+          <layout:Link link="sv1#area2#page2#pwu1First"/>
+          <layout:Link link="sv1#area2#page2#pwu1Previous"/>
+          <layout:Link link="sv1#area2#page2#pwu1Block"/>
+          <layout:Link link="sv1#area2#page2#pwu1Next"/>
+          <layout:Link link="sv1#area2#page2#pwu1Last"/>
+          <layout:Attribute attribute="ent5#att20"/>
+          <layout:Attribute attribute="rel2#role3.ent4#att17"/>
+          <layout:Attribute attribute="rel2#role3.ent4#att16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page2#inu1">
+          <layout:Attribute attribute="ent5#att20"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att26"/>
+          <layout:Attribute attribute="rel3#role5.ent7#att27"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area2#page2#ln2" name="Inicio" to="sv1#area1#page1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-202,-48,183,72"/>
+</Page>
