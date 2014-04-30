@@ -1,0 +1,7 @@
+# Tracing options for the Norma.diagram plug-in
+
+# Common issues
+Norma.diagram/debug=false
+
+# Visual IDs
+Norma.diagram/debug/visualID=false

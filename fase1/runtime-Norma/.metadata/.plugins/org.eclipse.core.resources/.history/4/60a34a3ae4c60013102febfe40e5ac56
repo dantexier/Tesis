@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimpleClass:Schemas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleClass="http://sedici.Simple" name="s">
+  <clases name="A" is_persistent="true">
+    <attrs name="b" is_primary="true" type="//@primitivedata.0"/>
+    <tipo name=""/>
+  </clases>
+  <clases name="B" is_persistent="true">
+    <attrs name="a" is_primary="true" type="//@primitivedata.0"/>
+  </clases>
+  <primitivedata name="String"/>
+  <primitivedata name="Normal"/>
+  <relacion src="//@clases.1" dest="//@clases.0" name="r"/>
+</SimpleClass:Schemas>

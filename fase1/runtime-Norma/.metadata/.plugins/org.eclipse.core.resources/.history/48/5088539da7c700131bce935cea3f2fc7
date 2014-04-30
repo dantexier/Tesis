@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SimpleClass:Schema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleClass="sedici.Simple">
+  <clases name="AAA" is_persistent="true"/>
+  <clases name="BBB" is_persistent="true"/>
+  <relaciones name="R1" src="//@clases.1" dest="//@clases.0"/>
+</SimpleClass:Schema>

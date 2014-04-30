@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/Norma/SimpleClass.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Norma/SimpleClass.ecore
+gmf_dashboard/generationModel=platform\:/resource/Norma/SimpleClass.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/Norma/SimpleClass.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/Norma/SimpleClass.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/Norma/SimpleClass.gmftool

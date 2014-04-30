@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleClass="sedici.Simple" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_zoB6kMejEeOoSJTgPbO_3w" type="SimpleClass" name="default1.simpleclass_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_3EmIEMejEeOoSJTgPbO_3w" type="2001" fontName="Ubuntu">
+    <element xmi:type="SimpleClass:Class" href="default1.simpleclass#//@clases.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3EmIEcejEeOoSJTgPbO_3w" x="84" y="36" width="216" height="98"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7M298MejEeOoSJTgPbO_3w" type="2001" fontName="Ubuntu">
+    <element xmi:type="SimpleClass:Class" href="default1.simpleclass#//@clases.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7M298cejEeOoSJTgPbO_3w" x="168" y="156" width="231" height="110"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zoB6kcejEeOoSJTgPbO_3w"/>
+  <element xmi:type="SimpleClass:Schema" href="default1.simpleclass#/"/>
+</notation:Diagram>

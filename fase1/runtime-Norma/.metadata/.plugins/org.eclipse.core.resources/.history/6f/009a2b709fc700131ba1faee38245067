@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleClass="sedici.Simple" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_VxN_sMefEeOoW9mgP3XmVw" type="SimpleClass" name="default2.simpleclass_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_VxOmwMefEeOoW9mgP3XmVw"/>
+  <element xmi:type="SimpleClass:Class" href="default2.simpleclass#/"/>
+</notation:Diagram>

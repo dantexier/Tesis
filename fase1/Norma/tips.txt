@@ -1,0 +1,3 @@
+http://www.kermeta.org/docs/fr.irisa.triskell.kermeta.samples.fsm.documentation/build/html.single/KerMeta-Create-FSM-Graphical-Editor-With-GMF/
+http://gmfsamples.tuxfamily.org/wiki/doku.php?id=gmf_tutorial2
+http://www.eclipse.org/forums/index.php/m/211205/?srch=%22problem+opening+wizard%22#msg_211205

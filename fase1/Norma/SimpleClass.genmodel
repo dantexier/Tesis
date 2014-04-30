@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Norma/src" modelPluginID="Norma" modelName="SimpleClass"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>SimpleClass.ecore</foreignModel>
+  <genPackages prefix="SimpleClass" basePackage="Norma" disposableProviderFactory="true"
+      ecorePackage="SimpleClass.ecore#/0">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="SimpleClass.ecore#/0/EA">
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/EA/Author"/>
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/EA/Institution"/>
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/EA/Journal"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="SimpleClass.ecore#/0/Vocabulary">
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/Vocabulary/Normal"/>
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/Vocabulary/Language"/>
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/Vocabulary/Eurovocs"/>
+      <genEnumLiterals ecoreEnumLiteral="SimpleClass.ecore#/0/Vocabulary/Decs"/>
+    </genEnums>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/Classifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleClass.ecore#/0/Classifier/name"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleClass.ecore#/0/Class/is_persistent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Class/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Class/attrs"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/PrimitiveDataType"/>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/Association">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleClass.ecore#/0/Association/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Association/src"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Association/dest"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleClass.ecore#/0/Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SimpleClass.ecore#/0/Attribute/is_primary"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="SimpleClass.ecore#/0/Schema">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Schema/clases"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Schema/relaciones"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SimpleClass.ecore#/0/Schema/datos"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="PrimitiveTypes" basePackage="Norma" disposableProviderFactory="true"
+      ecorePackage="SimpleClass.ecore#/1">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="SimpleClass.ecore#/1/Entity"/>
+    <genDataTypes ecoreDataType="SimpleClass.ecore#/1/String"/>
+    <genDataTypes ecoreDataType="SimpleClass.ecore#/1/Boolean"/>
+    <genDataTypes ecoreDataType="SimpleClass.ecore#/1/Int"/>
+  </genPackages>
+</genmodel:GenModel>
