@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mets ID="DSpace_ITEM_10915-4197" OBJID="hdl:10915/4197" TYPE="DSpace ITEM" PROFILE="http://www.dspace.org/schema/aip/mets_aip_1_0.xsd" xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
+ <metsHdr LASTMODDATE="2012-11-05T03:00:05">
+  <agent ROLE="CUSTODIAN" TYPE="OTHER" OTHERTYPE="DSpace Archive">
+   <name>123456789/0</name>
+  </agent>
+  <agent ROLE="CREATOR" TYPE="OTHER" OTHERTYPE="DSpace Software">
+   <name>DSpace 1.8.2</name>
+  </agent>
+ </metsHdr>
+ <dmdSec ID="dmdSec_1">
+  <mdWrap MDTYPE="MODS">
+   <xmlData xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd"><mods:mods xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-1.xsd">
+  <mods:extension>
+    <mods:dateAccessioned encoding="iso8601">2011-11-01T14:47:02Z</mods:dateAccessioned>
+  </mods:extension>
+  <mods:extension>
+    <mods:dateAvailable encoding="iso8601">2012-11-05T06:00:05Z</mods:dateAvailable>
+  </mods:extension>
+  <mods:originInfo>
+    <mods:dateIssued encoding="iso8601">2011</mods:dateIssued>
+  </mods:originInfo>
+  <mods:identifier type="uri">http://hdl.handle.net/10915/4197</mods:identifier>
+  <mods:abstract>Web application development is a complex and time consuming process that involves di erent stakeholders (ranging from customers to developers); these applications have some unique characteristics like navigational access to information, sophisticated interaction features, etc.&#xD;
+However, there have been few proposals to represent those requirements that are speci c to Web applications. Consequently, validation of requirements (e.g. in acceptance tests) is usually informal, and as a result troublesome.&#xD;
+To overcome these problems, this PhD Thesis proposes WebSpec, a domain speci c language for specifying the most relevant and characteristic requirements of Web applications: those involving interaction and navigation. We describe WebSpec diagrams, discussing their abstraction and expressive power.&#xD;
+As part of this work, we have created a test driven model based approach called WebTDD that gives a good framework for the language. Using the language with this approach we have test several of its features such as automatic test generation, management of changes in requirements, and improving the understanding of the diagrams through application simulation.&#xD;
+This PhD Thesis is composed of a set of published and submitted papers. In order to write this PhD Thesis as a collection of papers, several requirements must be taken into account as stated by the University of Alicante. With regard to the content of the PhD Thesis, it must speci cally include a summary which is devoted to the description of initial hypotheses, research objectives, and the collection of publications itself, thus justifying its coherence. It should be underlined that this summary of the PhD Thesis must also include research results and  nal conclusions. This summary corresponds to part I of this PhD Thesis (chapter 1 has been written in Spanish while chapter 2 is in English).&#xD;
+This work has been partially supported by the following projects: MANTRA (GV/2011/035) from Valencia Ministry, MANTRA (GRE09-17) from the University of Alicante and by the MESOLAP (TIN2010-14860) project from the Spanish Ministry of Education and Science.</mods:abstract>
+  <mods:physicalDescription>
+    <mods:extent>216 p.</mods:extent>
+  </mods:physicalDescription>
+  <mods:language>
+    <mods:languageTerm>en</mods:languageTerm>
+  </mods:language>
+  <mods:titleInfo>
+    <mods:title>Agile managing of web requirements with WebSpec</mods:title>
+  </mods:titleInfo>
+  <mods:genre>Tesis</mods:genre>
+</mods:mods></xmlData>
+  </mdWrap>
+ </dmdSec>
+ <dmdSec ID="dmdSec_2">
+  <mdWrap MDTYPE="OTHER" OTHERMDTYPE="DIM">
+   <xmlData xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"><dim:dim xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" dspaceType="ITEM">
+  <dim:field mdschema="dc" element="date" qualifier="accessioned">2011-11-01T14:47:02Z</dim:field>
+  <dim:field mdschema="dc" element="date" qualifier="available">2012-11-05T06:00:05Z</dim:field>
+  <dim:field mdschema="dc" element="date" qualifier="issued">2011</dim:field>
+  <dim:field mdschema="dc" element="identifier" qualifier="uri">http://hdl.handle.net/10915/4197</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="abstract" lang="es">Web application development is a complex and time consuming process that involves di erent stakeholders (ranging from customers to developers); these applications have some unique characteristics like navigational access to information, sophisticated interaction features, etc.&#xD;
+However, there have been few proposals to represent those requirements that are speci c to Web applications. Consequently, validation of requirements (e.g. in acceptance tests) is usually informal, and as a result troublesome.&#xD;
+To overcome these problems, this PhD Thesis proposes WebSpec, a domain speci c language for specifying the most relevant and characteristic requirements of Web applications: those involving interaction and navigation. We describe WebSpec diagrams, discussing their abstraction and expressive power.&#xD;
+As part of this work, we have created a test driven model based approach called WebTDD that gives a good framework for the language. Using the language with this approach we have test several of its features such as automatic test generation, management of changes in requirements, and improving the understanding of the diagrams through application simulation.&#xD;
+This PhD Thesis is composed of a set of published and submitted papers. In order to write this PhD Thesis as a collection of papers, several requirements must be taken into account as stated by the University of Alicante. With regard to the content of the PhD Thesis, it must speci cally include a summary which is devoted to the description of initial hypotheses, research objectives, and the collection of publications itself, thus justifying its coherence. It should be underlined that this summary of the PhD Thesis must also include research results and  nal conclusions. This summary corresponds to part I of this PhD Thesis (chapter 1 has been written in Spanish while chapter 2 is in English).&#xD;
+This work has been partially supported by the following projects: MANTRA (GV/2011/035) from Valencia Ministry, MANTRA (GRE09-17) from the University of Alicante and by the MESOLAP (TIN2010-14860) project from the Spanish Ministry of Education and Science.</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="provenance" lang="en">Made available in DSpace on 2012-05-02T21:36:34Z (GMT). No. of bitstreams: 1
+all-0001.pdf: 5643692 bytes, checksum: c299f051586c633c563b25c932c2e897 (MD5)
+  Previous issue date: 2011</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="provenance" lang="en">Submitted by Export SeDiCI (export@sedici.unlp.edu.ar) on 2012-09-13T16:33:00Z workflow start=Step: SeDiCILevelReview - action:claimaction
+No. of bitstreams: 2
+all-0001.pdf.txt: 536183 bytes, checksum: fb04c2f0f021761c6bf0b26a8654df19 (MD5)
+all-0001.pdf: 5643692 bytes, checksum: c299f051586c633c563b25c932c2e897 (MD5)</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="provenance" lang="en">Step: SeDiCILevelReview - action:editaction Approved for entry into archive by Analía Pinto(aprumiante@gmail.com) on 2012-09-13T16:34:44Z (GMT)</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="extent" lang="es">216 p.</dim:field>
+  <dim:field mdschema="dc" element="language" lang="es">en</dim:field>
+  <dim:field mdschema="dc" element="title" lang="es">Agile managing of web requirements with WebSpec</dim:field>
+  <dim:field mdschema="dc" element="type" lang="es">Tesis</dim:field>
+  <dim:field mdschema="sedici" element="creator" qualifier="person" lang="es" authority="3051" confidence="ACCEPTED">Robles Luna, Esteban</dim:field>
+  <dim:field mdschema="sedici" element="description" qualifier="note" lang="es">Este trabajo ha sido parcialmente financiado por los siguientes proyectos: Mantra (GV/2011/035), Ministerio de Valencia, MANTRA (GRE09-17) de la Universidad de Alicante y por el MESOLAP (TIN2010-14860) proyecto del Ministerio de Educación y Ciencia de España.</dim:field>
+  <dim:field mdschema="sedici" element="subject" qualifier="materias" lang="es" authority="5.8" confidence="ACCEPTED">Ciencias Informáticas</dim:field>
+  <dim:field mdschema="sedici" element="subject" qualifier="descriptores" lang="es" authority="4.1.6" confidence="ACCEPTED">Aplicación informática</dim:field>
+  <dim:field mdschema="sedici" element="subject" qualifier="descriptores" lang="es" authority="4.1.6.6" confidence="ACCEPTED">Aplicación web</dim:field>
+  <dim:field mdschema="sedici" element="subject" qualifier="keyword" lang="es">metodologías MDWE; lenguaje de requisitos; lenguaje de dominio específico (DSL); WebTDD; WebSpec</dim:field>
+  <dim:field mdschema="sedici" element="description" qualifier="fulltext" lang="es">true</dim:field>
+  <dim:field mdschema="mods" element="originInfo" qualifier="place" lang="es" authority="1.1.5" confidence="ACCEPTED">Facultad de Informática</dim:field>
+  <dim:field mdschema="sedici" element="subtype" lang="es">Tesis de doctorado</dim:field>
+  <dim:field mdschema="sedici" element="contributor" qualifier="director" lang="es" authority="99" confidence="ACCEPTED">Rossi, Gustavo Héctor</dim:field>
+  <dim:field mdschema="sedici" element="contributor" qualifier="codirector" lang="es" authority="20722" confidence="ACCEPTED">Garrigos Fernandez, Irene</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="name" lang="es" authority="3.5.8" confidence="ACCEPTED">Doctor en Ciencias Informáticas</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="grantor" lang="es" authority="1.1.5" confidence="ACCEPTED">Facultad de Informática</dim:field>
+  <dim:field mdschema="sedici" element="date" qualifier="exposure">2011</dim:field>
+  <dim:field mdschema="sedici2003" element="identifier" lang="es">ARG-UNLP-TPG-0000002728</dim:field>
+  <dim:field mdschema="sedici2003" element="pais" lang="es">1:::ARGENTINA</dim:field>
+  <dim:field mdschema="sedici2003" element="institucion" lang="es">1:::Universidad Nacional de La Plata</dim:field>
+  <dim:field mdschema="sedici2003" element="dependencia" lang="es">25:::Facultad de Informática</dim:field>
+  <dim:field mdschema="sedici2003" element="fecha-disponibilidad" lang="es">2012-11-02</dim:field>
+  <dim:field mdschema="sedici2003" element="fecha-hora-actualizacion" lang="es">2011-11-21 18:55:51</dim:field>
+  <dim:field mdschema="sedici2003" element="fecha-hora-creacion" lang="es">2011-11-01 11:47:02</dim:field>
+  <dim:field mdschema="sedici2003" element="tipo-documento" lang="es">2:::Tesis de Posgrado</dim:field>
+  <dim:field mdschema="sedici2003" element="estado" lang="es">68:::Publicado</dim:field>
+  <dim:field mdschema="sedici2003" element="owner" lang="es">3051:::Robles Luna, Esteban</dim:field>
+  <dim:field mdschema="sedici2003" element="autor" lang="es">3051:::Robles Luna, Esteban</dim:field>
+  <dim:field mdschema="sedici2003" element="codirector-tesis" lang="es">20722:::Garrigos Fernandez, Irene</dim:field>
+  <dim:field mdschema="sedici2003" element="descripcion-recurso" lang="es">216 p.</dim:field>
+  <dim:field mdschema="sedici2003" element="descriptores" lang="es">4.1.6:::Aplicación informática</dim:field>
+  <dim:field mdschema="sedici2003" element="descriptores" lang="es">4.1.6.6:::Aplicación web</dim:field>
+  <dim:field mdschema="sedici2003" element="director-tesis" lang="es">99:::Rossi, Gustavo Héctor</dim:field>
+  <dim:field mdschema="sedici2003" element="fecha-presentacion" lang="es">2011</dim:field>
+  <dim:field mdschema="sedici2003" element="fecha-publicacion" lang="es">2011</dim:field>
+  <dim:field mdschema="sedici2003" element="fulltext" lang="es">si</dim:field>
+  <dim:field mdschema="sedici2003" element="grado-alcanzado" lang="es">3.5.8:::Doctor en Ciencias Informáticas</dim:field>
+  <dim:field mdschema="sedici2003" element="idioma" lang="es">en</dim:field>
+  <dim:field mdschema="sedici2003" element="idioma" lang="es">en</dim:field>
+  <dim:field mdschema="sedici2003" element="institucion-otorgante" lang="es">1.1.5:::Facultad de Informática</dim:field>
+  <dim:field mdschema="sedici2003" element="materias" lang="es">5.8:::Ciencias Informáticas</dim:field>
+  <dim:field mdschema="sedici2003" element="notas" lang="es">Este trabajo ha sido parcialmente financiado por los siguientes proyectos: Mantra (GV/2011/035)&#xD;
+Ministerio de Valencia, MANTRA (GRE09-17) de la Universidad de Alicante y por el MESOLAP (TIN2010-14860) proyecto del Ministerio de Educación y Ciencia de España</dim:field>
+  <dim:field mdschema="sedici2003" element="notas" lang="en">This work has been partially supported by the following projects: MANTRA (GV/2011/035) from Valencia Ministry, MANTRA (GRE09-17) from the University of Alicante and by the MESOLAP (TIN2010-14860) project from the Spanish Ministry of Education and Science</dim:field>
+  <dim:field mdschema="sedici2003" element="palabras-clave" lang="es">metodologías MDWE; lenguaje de requisitos; lenguaje de dominio específico (DSL); WebTDD; WebSpec</dim:field>
+  <dim:field mdschema="sedici2003" element="metadato-tipo-documento" lang="es">Tesis de doctorado</dim:field>
+  <dim:field mdschema="sedici2003" element="metadato-tipo-documento" lang="en">Tesis de Doctorado</dim:field>
+  <dim:field mdschema="sedici2003" element="metadato-tipo-documento" lang="pt">Tesis de Doctorado</dim:field>
+  <dim:field mdschema="sedici2003" element="titulo-documento" lang="es">Agile managing of web requirements with WebSpec</dim:field>
+  <dim:field mdschema="sedici2003" element="entidad-origen" lang="es">1.1.5:::Facultad de Informática</dim:field>
+</dim:dim></xmlData>
+  </mdWrap>
+ </dmdSec>
+ <amdSec ID="amd_3">
+  <rightsMD ID="rightsMD_9">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+    <xmlData xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd"><rights:RightsDeclarationMD xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" RIGHTSCATEGORY="LICENSED">
+  <rights:Context CONTEXTCLASS="GENERAL PUBLIC">
+    <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false" />
+  </rights:Context>
+</rights:RightsDeclarationMD></xmlData>
+   </mdWrap>
+  </rightsMD>
+  <sourceMD ID="sourceMD_10">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+    <xmlData xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"><dim:dim xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" dspaceType="ITEM">
+  <dim:field mdschema="dc" element="creator">export@sedici.unlp.edu.ar</dim:field>
+  <dim:field mdschema="dc" element="identifier" qualifier="uri">hdl:10915/4197</dim:field>
+  <dim:field mdschema="dc" element="relation" qualifier="isPartOf">hdl:10915/37</dim:field>
+</dim:dim></xmlData>
+   </mdWrap>
+  </sourceMD>
+ </amdSec>
+ <amdSec ID="amd_13">
+  <rightsMD ID="rightsMD_19">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+    <xmlData xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd"><rights:RightsDeclarationMD xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" RIGHTSCATEGORY="LICENSED">
+  <rights:Context CONTEXTCLASS="GENERAL PUBLIC">
+    <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false" />
+  </rights:Context>
+</rights:RightsDeclarationMD></xmlData>
+   </mdWrap>
+  </rightsMD>
+ </amdSec>
+ <amdSec ID="amd_22">
+  <techMD ID="techMD_23">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://localhost:8080/xmlui/bitstream/10915%2F4197/1/all-0001.pdf</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>c299f051586c633c563b25c932c2e897</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>5643692</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>application/pdf</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>all-0001.pdf</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+  <rightsMD ID="rightsMD_28">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+    <xmlData xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd"><rights:RightsDeclarationMD xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" RIGHTSCATEGORY="LICENSED">
+  <rights:Context CONTEXTCLASS="GENERAL PUBLIC">
+    <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false" />
+  </rights:Context>
+</rights:RightsDeclarationMD></xmlData>
+   </mdWrap>
+  </rightsMD>
+  <sourceMD ID="sourceMD_29">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+    <xmlData xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"><dim:dim xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" dspaceType="BITSTREAM">
+  <dim:field mdschema="dc" element="title">all-0001.pdf</dim:field>
+  <dim:field mdschema="dc" element="description">Documento completo</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="medium">Adobe PDF</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="mimetype">application/pdf</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="supportlevel">KNOWN</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="internal">false</dim:field>
+</dim:dim></xmlData>
+   </mdWrap>
+  </sourceMD>
+ </amdSec>
+ <amdSec ID="amd_30">
+  <rightsMD ID="rightsMD_36">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+    <xmlData xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd"><rights:RightsDeclarationMD xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" RIGHTSCATEGORY="LICENSED">
+  <rights:Context CONTEXTCLASS="GENERAL PUBLIC">
+    <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false" />
+  </rights:Context>
+</rights:RightsDeclarationMD></xmlData>
+   </mdWrap>
+  </rightsMD>
+ </amdSec>
+ <amdSec ID="amd_38">
+  <techMD ID="techMD_39">
+   <mdWrap MDTYPE="PREMIS">
+    <xmlData xmlns:premis="http://www.loc.gov/standards/premis" xsi:schemaLocation="http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd"><premis:premis xmlns:premis="http://www.loc.gov/standards/premis">
+  <premis:object>
+    <premis:objectIdentifier>
+      <premis:objectIdentifierType>URL</premis:objectIdentifierType>
+      <premis:objectIdentifierValue>http://localhost:8080/xmlui/bitstream/10915%2F4197/2/all-0001.pdf.txt</premis:objectIdentifierValue>
+    </premis:objectIdentifier>
+    <premis:objectCategory>File</premis:objectCategory>
+    <premis:objectCharacteristics>
+      <premis:fixity>
+        <premis:messageDigestAlgorithm>MD5</premis:messageDigestAlgorithm>
+        <premis:messageDigest>fb04c2f0f021761c6bf0b26a8654df19</premis:messageDigest>
+      </premis:fixity>
+      <premis:size>536183</premis:size>
+      <premis:format>
+        <premis:formatDesignation>
+          <premis:formatName>text/plain</premis:formatName>
+        </premis:formatDesignation>
+      </premis:format>
+    </premis:objectCharacteristics>
+    <premis:originalName>all-0001.pdf.txt</premis:originalName>
+  </premis:object>
+</premis:premis></xmlData>
+   </mdWrap>
+  </techMD>
+  <rightsMD ID="rightsMD_44">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="METSRIGHTS">
+    <xmlData xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" xsi:schemaLocation="http://cosimo.stanford.edu/sdr/metsrights/ http://cosimo.stanford.edu/sdr/metsrights.xsd"><rights:RightsDeclarationMD xmlns:rights="http://cosimo.stanford.edu/sdr/metsrights/" RIGHTSCATEGORY="LICENSED">
+  <rights:Context CONTEXTCLASS="GENERAL PUBLIC">
+    <rights:Permissions DISCOVER="true" DISPLAY="true" MODIFY="false" DELETE="false" />
+  </rights:Context>
+</rights:RightsDeclarationMD></xmlData>
+   </mdWrap>
+  </rightsMD>
+  <sourceMD ID="sourceMD_45">
+   <mdWrap MDTYPE="OTHER" OTHERMDTYPE="AIP-TECHMD">
+    <xmlData xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"><dim:dim xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" dspaceType="BITSTREAM">
+  <dim:field mdschema="dc" element="title">all-0001.pdf.txt</dim:field>
+  <dim:field mdschema="dc" element="title" qualifier="alternative">Written by FormatFilter org.dspace.app.mediafilter.PDFFilter on 2012-05-03T13:27:33Z (GMT).</dim:field>
+  <dim:field mdschema="dc" element="description">Extracted text</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="medium">Text</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="mimetype">text/plain</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="supportlevel">KNOWN</dim:field>
+  <dim:field mdschema="dc" element="format" qualifier="internal">false</dim:field>
+</dim:dim></xmlData>
+   </mdWrap>
+  </sourceMD>
+ </amdSec>
+ <fileSec>
+  <fileGrp ADMID="amd_13" USE="ORIGINAL">
+   <file ID="bitstream_1" MIMETYPE="application/pdf" SEQ="1" SIZE="5643692" CHECKSUM="c299f051586c633c563b25c932c2e897" CHECKSUMTYPE="MD5" ADMID="amd_22" GROUPID="GROUP_bitstream_1">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_1870.pdf"/>
+   </file>
+  </fileGrp>
+  <fileGrp ADMID="amd_30" USE="TEXT">
+   <file ID="bitstream_2" MIMETYPE="text/plain" SEQ="2" SIZE="536183" CHECKSUM="fb04c2f0f021761c6bf0b26a8654df19" CHECKSUMTYPE="MD5" ADMID="amd_38" GROUPID="GROUP_bitstream_1">
+    <FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="bitstream_8239.txt"/>
+   </file>
+  </fileGrp>
+ </fileSec>
+ <structMap ID="struct_11" LABEL="DSpace Object" TYPE="LOGICAL">
+  <div ID="div_12" DMDID="dmdSec_2 dmdSec_1" ADMID="amd_3" TYPE="DSpace Object Contents">
+   <div ID="div_21" TYPE="DSpace BITSTREAM">
+    <fptr FILEID="bitstream_1"/>
+   </div>
+  </div>
+ </structMap>
+ <structMap ID="struct_46" LABEL="Parent" TYPE="LOGICAL">
+  <div ID="div_47" LABEL="Parent of this DSpace Object" TYPE="AIP Parent Link">
+   <mptr ID="mptr_48" LOCTYPE="HANDLE" xlink:type="simple" xlink:href="10915/37"/>
+  </div>
+ </structMap>
+</mets>
