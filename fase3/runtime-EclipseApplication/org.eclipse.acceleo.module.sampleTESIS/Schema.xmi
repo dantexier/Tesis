@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<RDBMS:Schema
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:RDBMS="http://ISO.RDBMS/2.0"
+    name="Esquema">
+  <tables name="A"
+      pkey="//@tables.0/@cols.0"
+      tipo="Normal">
+    <cols name="c1"
+        type="String"/>
+    <cols name="c2"
+        type="String"/>
+  </tables>
+  <tables name="B"
+      pkey="//@tables.1/@cols.0"
+      tipo="EA">
+    <cols name="name"
+        type="String"/>
+  </tables>
+  <tables name="C"
+      pkey="//@tables.2/@cols.0"
+      tipo="Normal">
+    <fkeys references="//@tables.0"
+        cols="//@tables.0/@cols.0"/>
+    <cols name="nombre"
+        type="String"/>
+    <cols name="valor"
+        type="String"/>
+  </tables>
+</RDBMS:Schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Thesis/src" modelPluginID="Thesis" modelName="RDBMS"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>RDBMS.ecore</foreignModel>
+  <genPackages prefix="PT" disposableProviderFactory="true" ecorePackage="RDBMS.ecore#/0">
+    <genDataTypes ecoreDataType="RDBMS.ecore#/0/String"/>
+  </genPackages>
+  <genPackages prefix="RDBMS" disposableProviderFactory="true" ecorePackage="RDBMS.ecore#/1">
+    <genClasses ecoreClass="RDBMS.ecore#/1/Table">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RDBMS.ecore#/1/Table/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/Table/fkeys"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/Table/pkey"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/Table/cols"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RDBMS.ecore#/1/Table/tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="RDBMS.ecore#/1/Column">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RDBMS.ecore#/1/Column/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RDBMS.ecore#/1/Column/type"/>
+    </genClasses>
+    <genClasses ecoreClass="RDBMS.ecore#/1/FKey">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/FKey/references"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/FKey/cols"/>
+    </genClasses>
+    <genClasses ecoreClass="RDBMS.ecore#/1/Schema">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute RDBMS.ecore#/1/Schema/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference RDBMS.ecore#/1/Schema/tables"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

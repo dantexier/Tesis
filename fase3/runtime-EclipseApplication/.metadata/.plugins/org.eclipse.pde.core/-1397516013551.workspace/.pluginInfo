@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1428" class="org.eclipse.acceleo.module.sampleTESIS.Activator" localization="OSGI-INF/l10n/bundle" name="Acceleo SampleTESIS Module Runtime Plug-in" project="org.eclipse.acceleo.module.sampleTESIS" provider="Eclipse Modeling Project"/>
+</map>

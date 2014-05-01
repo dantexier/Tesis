@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="EmfFacetModelBrowserSettings">
+	<section name="sedici.SimpleRDBMS">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+			<item value="ui"/>
+			<item value="UMLPapyrusDefaultBrowserCustomization"/>
+			<item value="constraints"/>
+			<item value="SimpleUML"/>
+			<item value="SysMLDefaultExplorerCustomization"/>
+			<item value="PapyrusTableFacetCustomization"/>
+			<item value="environment"/>
+			<item value="PapyrusTableInstanceCustomization"/>
+			<item value="PapyrusPages"/>
+			<item value="UMLFacetDefaultBrowserCustomization"/>
+			<item value="context"/>
+			<item value="NotationCustomization"/>
+			<item value="PapyrusNotation"/>
+			<item value="PapyrusNotationFacet"/>
+		</list>
+	</section>
+	<section name="http://ISO.RDBMS/2.0">
+		<list key="LastAppliedFacets">
+		</list>
+		<list key="LastAppliedCustomizations">
+			<item value="ui"/>
+			<item value="UMLPapyrusDefaultBrowserCustomization"/>
+			<item value="constraints"/>
+			<item value="SimpleUML"/>
+			<item value="SysMLDefaultExplorerCustomization"/>
+			<item value="PapyrusTableFacetCustomization"/>
+			<item value="environment"/>
+			<item value="PapyrusTableInstanceCustomization"/>
+			<item value="PapyrusPages"/>
+			<item value="UMLFacetDefaultBrowserCustomization"/>
+			<item value="context"/>
+			<item value="NotationCustomization"/>
+			<item value="PapyrusNotation"/>
+			<item value="PapyrusNotationFacet"/>
+		</list>
+	</section>
+</section>
