@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SimpleClass="sedici.Simple"
+    xsi:schemaLocation="sedici.Simple ../Metamodelos/SimpleClass.ecore#/0">
+  <SimpleClass:Class
+      name="Item"
+      is_persistent="true"
+      tipo="Normal">
+    <attrs name="titulo"
+        is_primary="false"
+        type="/4"/>
+    <attrs name="ID"
+        is_primary="true"
+        type="/3"/>
+    <attrs name="tipo"
+        is_primary="false"
+        type="/7"/>
+  </SimpleClass:Class>
+  <SimpleClass:Class
+      name="metadatos"
+      is_persistent="true"
+      tipo="Meta">
+    <attrs name="name"
+        is_primary="false"
+        type="/4"/>
+    <attrs name="ID"
+        is_primary="true"
+        type="/3"/>
+    <attrs name="valor"
+        is_primary="false"
+        type="/4"/>
+    <attrs name="tipo"
+        is_primary="false"
+        type="/8"/>
+    <attrs name="categoria"
+        is_primary="false"
+        type="/10"/>
+  </SimpleClass:Class>
+  <SimpleClass:Class
+      name="autores"
+      is_persistent="true"
+      tipo="EA">
+    <attrs name="ID"
+        is_primary="true"
+        type="/3"/>
+    <attrs name="name"
+        is_primary="false"
+        type="/4"/>
+    <attrs name="valor"
+        is_primary="false"
+        type="/4"/>
+  </SimpleClass:Class>
+  <SimpleClass:PrimitiveDataType
+      name="Integer"/>
+  <SimpleClass:PrimitiveDataType
+      name="String"/>
+  <SimpleClass:PrimitiveDataType
+      name="Long"/>
+  <SimpleClass:PrimitiveDataType
+      name="Boolean"/>
+  <SimpleClass:PrimitiveDataType
+      name="TypesCI"/>
+  <SimpleClass:PrimitiveDataType
+      name="Vocabulary"/>
+  <SimpleClass:PrimitiveDataType
+      name="AE"/>
+  <SimpleClass:PrimitiveDataType
+      name="Classification"/>
+  <SimpleClass:Association
+      src="/2"
+      dest="/1"
+      name="entidades"/>
+  <SimpleClass:Association
+      src="/1"
+      dest="/0"
+      name="item"/>
+  <SimpleClass:Class
+      name="File"
+      is_persistent="true"
+      tipo="Normal">
+    <attrs name="name"
+        is_primary="false"
+        type="/4"/>
+    <attrs name="handle"
+        is_primary="true"
+        type="/3"/>
+  </SimpleClass:Class>
+  <SimpleClass:Association
+      src="/13"
+      dest="/0"
+      name="archivos"/>
+</xmi:XMI>

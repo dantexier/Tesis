@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/Tesis/Metamodelos/SimpleRDBMS.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Tesis/Metamodelos/SimpleRDBMS.ecore
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/MiDSL/SimpleClass.gmfgraph

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SimpleRDBMS -->
+      <package
+            uri="sedici.PT"
+            class="PrimitiveTypes.PrimitiveTypesPackage"
+            genModel="Metamodelos/SimpleRDBMS.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated SimpleRDBMS -->
+      <package
+            uri="sedici.SimpleRDBMS"
+            class="SimpleRDBMS.SimpleRDBMSPackage"
+            genModel="Metamodelos/SimpleRDBMS.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated SimpleRDBMS -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="SimpleRDBMS.presentation.SimpleRDBMSModelWizardID"
+            name="%_UI_SimpleRDBMSModelWizard_label"
+            class="SimpleRDBMS.presentation.SimpleRDBMSModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SimpleRDBMSModelFile.gif">
+         <description>%_UI_SimpleRDBMSModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated SimpleRDBMS -->
+      <editor
+            id="SimpleRDBMS.presentation.SimpleRDBMSEditorID"
+            name="%_UI_SimpleRDBMSEditor_label"
+            icon="icons/full/obj16/SimpleRDBMSModelFile.gif"
+            extensions="simplerdbms"
+            class="SimpleRDBMS.presentation.SimpleRDBMSEditor"
+            contributorClass="SimpleRDBMS.presentation.SimpleRDBMSActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

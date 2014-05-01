@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleRDBMS="sedici.SimpleRDBMS">
+  <SimpleRDBMS:Table name="Item" pkey="/0/@cols.0" tipo="Normal">
+    <cols name="ID" type="Integer"/>
+    <cols name="titulo" type="String"/>
+    <cols name="tipo" type="TypesCI"/>
+  </SimpleRDBMS:Table>
+  <SimpleRDBMS:Table name="metadatos" pkey="/1/@cols.0" tipo="Meta">
+    <fkeys references="/0" cols="/1/@cols.1"/>
+    <cols name="ID" type="Integer"/>
+    <cols name="item_ID" type="Integer"/>
+    <cols name="name" type="String"/>
+    <cols name="valor" type="String"/>
+    <cols name="tipo" type="Vocabulary"/>
+    <cols name="categoria" type="Classification"/>
+  </SimpleRDBMS:Table>
+  <SimpleRDBMS:Table name="autores" pkey="/2/@cols.0" tipo="EA">
+    <fkeys references="/1" cols="/2/@cols.1"/>
+    <cols name="ID" type="Integer"/>
+    <cols name="entidades_ID" type="Integer"/>
+    <cols name="name" type="String"/>
+    <cols name="valor" type="String"/>
+  </SimpleRDBMS:Table>
+  <SimpleRDBMS:Table name="File" pkey="/3/@cols.0" tipo="Normal">
+    <fkeys references="/0" cols="/3/@cols.1"/>
+    <cols name="handle" type="Integer"/>
+    <cols name="archivos_ID" type="Integer"/>
+    <cols name="name" type="String"/>
+  </SimpleRDBMS:Table>
+</xmi:XMI>
